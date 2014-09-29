@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+<title>Associate Professor Majid Sarvi</title>
+    <link rel="shortcut icon" href="images/mj.ico" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+ <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script>
+       function initMap() {
+    var myLatlng = new google.maps.LatLng(-37.909965, 145.134400); // <- Your latitude and longitude
+    var styles = [
+      {
+        "featureType": "water",
+        "stylers": [
+        {
+          "color": "blue"
+        },
+        {
+          "visibility": "on"
+        }
+        ]
+      },
+      {
+        "featureType": "landscape",
+        "stylers": [
+        {
+          "color": "#f2f2f2"
+        }
+        ]
+      },
+      {
+        "featureType": "road",
+        "stylers": [
+        {
+          "saturation": -100
+        },
+        {
+          "lightness": 45
+        }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "stylers": [
+        {
+          "visibility": "simplified"
+        }
+        ]
+      },
+      {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+        {
+          "visibility": "off"
+        }
+        ]
+      },
+      {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+        {
+          "color": "#444444"
+        }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "stylers": [
+        {
+          "visibility": "off"
+        }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "stylers": [
+        {
+          "visibility": "off"
+        }
+        ]
+      }
+     ]
+
+    var mapOptions = {
+      zoom: 15,
+      center: myLatlng,
+      mapTypeControl: false,
+      disableDefaultUI: true,
+      zoomControl: false,
+      scrollwheel: false,
+      styles: styles
+    }
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'We are here!'
+    });
+  }
+
+  google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+        var h = true;
+        $(".slidingDiv").hide();
+        $(".show_hide").show();
+
+    $('.show_hide').click(function(){
+    $(".slidingDiv").slideToggle();
+
+
+    if(h == true)
+    {
+     $("#arrow").removeClass("arrow1");
+     $("#arrow").addClass("arrow2");
+     $("#pub-text").removeClass("t1").addClass("t2");
+
+     $(".show_hide").css('background-color','black');
+     h = false;
+    }
+     else
+   {
+     $("#arrow").removeClass("arrow2");
+     $("#arrow").addClass("arrow1");
+      $("#pub-text").removeClass("t2").addClass("t1");
+     $(".show_hide").css('background-color','lightgrey');
+     h = true;
+   }
+
+    });
+
+});
+
+</script>
+
+
+<script>
+
+$(document).ready(function(){
+
+    var h1 = true;
+    $(".slidingDiv2").hide();
+    $(".show_hide2").show();
+
+    $('.show_hide2').click(function(){
+    $(".slidingDiv2").slideToggle();
+
+
+    if(h1 == true)
+    {
+     $("#arrow3").removeClass("arrow3");
+     $("#arrow3").addClass("arrow4");
+     $("#pub-text2").removeClass("t3").addClass("t4");
+
+     $(".show_hide2").css('background-color','black');
+     h1 = false;
+    }
+     else
+   {
+     $("#arrow3").removeClass("arrow4");
+     $("#arrow3").addClass("arrow3");
+     $("#pub-text2").removeClass("t4").addClass("t3");
+     $(".show_hide2").css('background-color','lightgrey');
+     h1 = true;
+   }
+
+    });
+
+});
+
+</script>
+
+<style>
+#logo{position: absolute;}
+#mj{bottom: -10px; left: -20px; position: absolute;}
+#home{min-width: 1200px;}
+
+.blank{width: 100%; height: 100%;background-image: url('images/dot.png');
+       background-repeat: repeat; background-attachment: fixed; z-index: -1;
+       background-color: rgba(47,54,64,0.8);
+     }
+.clear-line{width: 100%; height: 25px; background-color: white; min-width: 1200px; }
+.content {height: 900px; width: 100%;}
+ .test{width: 100%; background-color: white;}
+ .test2{width: 100%; background-color: white;}
+
+  .slidingDiv {
+    width:75%;
+    height:4450px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+  .slidingDiv2 {
+    width:75%;
+    height:7000px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+ .slidingDiv p{text-align: justify; font-size: 1.2em;}
+
+.show_hide {
+    display:none; width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 51px; color: #fff; background-color: lightgrey;  text-align: left;
+
+
+}
+
+.slidingDiv2 p{text-align: justify; font-size: 1.2em;}
+
+.show_hide2 {
+    display:none; width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 51px; color: #fff; background-color: lightgrey;  text-align: left;
+
+
+}
+.icon{width: 50px; border-right: 1px solid white; float: left; height: 100%;
+ }
+
+ .arrow1{
+  margin-top: 18px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 18px;
+  width: 14px; height: 14px;
+  background: url('http://www.telstra.com.au/uberprod/ss-global/themes/v11/images/v2.1-ui-button-sprite.png') -15px -59px no-repeat transparent;}
+
+  .arrow2{
+  margin-top: 18px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 18px;
+  width: 14px; height: 14px;
+  background: url('http://www.telstra.com.au/uberprod/ss-global/themes/v11/images/v2.1-ui-button-sprite.png') -59px -15px no-repeat transparent;
+
+}
+
+
+ .arrow3{
+  margin-top: 18px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 18px;
+  width: 14px; height: 14px;
+  background: url('http://www.telstra.com.au/uberprod/ss-global/themes/v11/images/v2.1-ui-button-sprite.png') -15px -59px no-repeat transparent;}
+
+   .arrow4{
+  margin-top: 18px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 18px;
+  width: 14px; height: 14px;
+  background: url('http://www.telstra.com.au/uberprod/ss-global/themes/v11/images/v2.1-ui-button-sprite.png') -59px -15px no-repeat transparent;
+
+}
+
+.t1{width: 600px; float: left; height: 100%;  font-size: 24px; color: #222; padding-left: 15px; padding-top: 10px;}
+.t2{width: 600px; float: left; height: 100%;  font-size: 24px; color: #fff; padding-left: 15px; padding-top: 10px;}
+
+.t3{width: 600px; float: left; height: 100%;  font-size: 24px; color: #222; padding-left: 15px; padding-top: 10px;}
+.t4{width: 600px; float: left; height: 100%;  font-size: 24px; color: #fff; padding-left: 15px; padding-top: 10px;}
+
+.show_hide:hover
+{
+  cursor: pointer;
+}
+
+.show_hide2:hover
+{
+  cursor: pointer;
+}
+
+@media (min-width: 2500px){
+  #home{height: 560px;}
+  }
+  @media (min-width: 1900px){
+  #home{height: 540px;}
+  }
+  @media (min-width: 1900px){
+  #home{min-height: 520px;}
+  }
+
+  #about{width: 100%; height: 649px; background-color: #fff; min-width: 1200px;}
+  #research{width: 100%; height: auto; background-color: #fff;background-image: url("./images/bg4.jpg"); min-width: 1200px;}
+  .r-head{width: 100%; height: 200px; background-color: #fff; text-align: center;
+        color:#515151; font-size: 48px; font-weight: 300; padding-top: 6%;}
+ .tile1{width: 440px; height: 440px; padding: 35px; color:#222; margin-top: 60px;
+        margin-left: 100px;  float: left;
+  font-size: 1.2em;
+   background-color: rgb(255, 255, 255);
+   background-color: rgba(255, 255, 255, 0.7);text-shadow: none; position: absolute; }
+
+   .tile2{width: 440px; height: 440px; padding: 35px; color:#222;  margin-top: 60px;
+         float: right;  margin-right: 100px;
+  font-size: 1.2em;
+   background-color: rgb(255, 255, 255);
+   background-color: rgba(255, 255, 255, 0.7);text-shadow: none;  }
+
+ #publications{width: 100%;height: auto; background-color: white; min-width: 1200px;}
+
+
+  #teaching{width: 100%; height: 600px; min-width: 1200px; }
+  .t-text{width: 100%; height: auto; padding-top: 60px;}
+  #activities{width: 100%; height: 760px; min-width: 1200px; }
+  .acts{width: 100%; height: auto;}
+  .act-con{width: 60%; height: auto; margin-left: auto; margin-right: auto; padding-top: 25px;}
+  .act-left{float: left; width: 50%; text-align: center;}
+  .act-right{float:right; width: 50%; text-align: center;}
+  #team{width: 100%; height: 2800px; background-color: #eee; min-width: 1200px;}
+  #contact{width: 100%; height: 800px;  min-width: 1200px;}
+
+  #row{width: 100%; height: 300px; background-color: ; margin-bottom: 20px;}
+  #member-con{width: 25%; padding-left: 15px; padding-right: 15px; float:left;
+          height: 300px; border: 1px solid #ececec;}
+  #research-con{width: 33%; padding-left: 15px; padding-right: 15px; float:left;
+    height: 320px; border: 1px solid #ececec;}
+  #member-con #photo {height: 166px; width: 100%; }
+  #research-con #photo {height: 210px; width: 100%; }
+  #member-con #inner-text {width: 100%; height: 130px;
+                           background-color: white;
+                           border-bottom-right-radius: 4px;
+                           border-bottom-left-radius: 4px;
+                           padding: 15px;}
+  #research-con #inner-text {width: 320px; height: 130px;
+                           background-color: white;
+                           border-bottom-right-radius: 4px;
+                           border-bottom-left-radius: 4px;
+                           padding: 15px;}
+ #member-con #inner-text h3, p
+ {
+   text-align: center; margin-top: 0;
+ }
+ #research-con #inner-text h3, p
+ {
+   text-align: center; margin-top: 0px;
+ }
+
+ #member-con #inner-text p
+ {
+  color:grey;
+ }
+  img { border-top-right-radius: 4px;
+        border-top-left-radius: 4px;}
+#research-con #inner-text p
+ {
+  color:grey;
+ }
+  img { border-top-right-radius: 4px;
+        border-top-left-radius: 4px;}
+.course{width:100%; height:360px; color:white; font-size: 24px; line-height: 1.6em;
+  text-align: center;
+  background-image: url('images/bgt.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+footer{min-width: 1200px;}
+</style>
+</head>
+<body>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <div class="hero">
+        <hr>
+        <!-- Home Slider -->
+        <div class="home-slider">
+          <ul class="slides">
+            <li>
+              <h1><b>Australian Research Council</b> <br/><b>Key Centre in Transport Management</b></h1>
+            </li>
+            <li>
+              <h1><b>Leading Interdisciplinary</b><br/> <b>Education and Research Institution</b></h1>
+            </li>
+            <li>
+              <h1><b>Advancing Transport Planning</b><br/> <b>and Operations Through Innovation</b></h1>
+            </li>
+          </ul>
+        </div>
+        <!-- End Home Slider -->
+        <hr>
+      </div>
+    </div>
+  </section>
+  <!-- End Home Section -->
+
+
+<!-- Header -->
+        <header class="navbar navbar-default topnav" role="banner">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#home" id="logo"><img id="mj" src="images/mj.jpg"/>&nbsp;&nbsp;Majid Sarvi</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navigation">
+              <ul class="nav navbar-nav navbar-right" id="nav">
+                <li class="active"><a href="#home"><b>HOME</b></a></li>
+                <li><a href="#about"><b>ABOUT</b></a></li>
+                <li><a href="#research"><b>RESEARCH</b></a></li>
+                 <li><a href="#publications"><b>PUBLICATIONS</b></a></li>
+                <li><a href="#teaching"><b>TEACHING</b></a></li>
+                <li><a href="#activities"><b>ACTIVITIES</b></a></li>
+                <li><a href="#team"><b>STUDENTS</b></a></li>
+                <li><a href="#contact"><b>CONTACT</b></a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+  <!-- End Header -->
+
+    <!-- About Section -->
+    <section id="about" class="section" >
+      <div class="container">
+
+      <div class="title col-md-8 col-sm-10 col-xs-12">
+       <h1 style="font-weight: 600;"><b>ABOUT</b></h1>
+        <hr>
+      </div>
+
+
+      <p class="about-text">Majid Sarvi is an Associate Professor in the Civil Engineering Department, Monash University and is currently the director of Institute of Transport Studies. He received his PhD degree in Transportation Engineering from Tokyo University (2001). He also holds a M.Eng and B.Eng degrees in Civil Engineering.
+      </p>
+
+      <p class="about-text">He has over 17 years of professional, academic and research experience in the areas of traffic flow theory, crowd dynamic modelling, and large-scale multimodal transport network modelling, vulnerability and optimization. He has been the author/co-author of over 200 refereed publications in top transportation journals and various conference and symposia proceedings. This includes 136 refereed publications in the past 5 years, 57 ISI publications listed in Scopus, and 4 papers in the International Transportation and Traffic Symposium (ISTTT) proceedings. He currently serves on the editorial board of several journals including Transportation Research Part C, Journal of Advanced Transportation, Transportmetrica, and Journal of Transportation Letters.
+      </p>
+
+      <p class="about-text">Majid has served on several international research committees, the Network Modelling Committee (ADB30), Traffic Flow Theory and Characteristics Committee (AHB45), and the Emergency Evacuation Task Force of the Transportation Research Board (TRB) of the U.S. National Research Council. He is also the founder and co-chair of the Crowd Dynamic Modelling Subcommittee AHB45(2) of TRB.
+      </p>
+
+
+  </div>
+
+  </section>
+  <!-- End About Section -->
+
+ <section id="research" class="parallax">
+
+  <div class="r-head" style="font-weight: 600;"><b>RESEARCH</b></div>
+
+ <div class="container">
+
+
+
+<div class="content">
+  <div class="tile1">
+  <h1>Crowd Dynamics Modelling</h1>
+
+ The first research team conducts research in the area of crowd dynamic modelling, experiments and simulation. The research team uses variety of biological entities as proxy to human for crowd dynamic study.
+
+</div>
+
+<div class="tile2">
+  <h1>Multimodal Transport Network Modelling</h1>
+ The second research team focuses on multimodal transport network modelling, transport network optimisation, and land use and transport interaction modelling.
+</div>
+</div>
+</div>
+
+</section>
+
+<div class="clear-line"></div>
+<section  id = "publications" >
+
+ <div class="r-head" style="font-weight: 600;"><div class="col-md-12 text-center">PUBLICATIONS
+ <div class="col-md-12 text-center" style="font-size:18px;"><a href="http://scholar.google.com.au/citations?user=PlYxQXkAAAAJ&hl=en" target="_blank"><span class="glyphicon glyphicon-link"></span>  My Google Scholar</a></div></div></div>
+<div class="clear-line"></div>
+<div class="clear-line"></div>
+<div class="test">
+ <div class="show_hide">
+   <div class="icon">
+     <div class="arrow1" id="arrow"></div>
+   </div>
+   <div class="t1" id="pub-text">Journal Articles</div>
+ </div>
+<div class="slidingDiv" id ="a"> </br>
+<p> Shiwakoti, N., Sarvi, M., Burd, M.C., 2014, Similar Crowd Behavior in Organisms of Vastly Different Body Size, Journal Of Insect Behavior [P], vol 27, issue 2, Springer New York LLC, United States, pp. 239-250.  </p>
+<p> Sobhani, A., Young, W., Sarvi, M., 2013, A simulation based approach to assess the safety performance of road locations,?Transportation Research Part C: Emerging Technologies [P], vol 32, issue SI, Pergamon-Elsevier Science Ltd, Oxford England UK, pp. 144-158.  </p>
+<p> Shiwakoti, N., Sarvi, M., 2013, Enhancing the panic escape of crowd through architectural design,Transportation Research Part C: Emerging Technologies [P], vol 37, Pergamon, Oxford UK, pp. 260-267. </p>
+<p> Sarvi, M., 2013, Freeway weaving phenomena observed during congested traffic,?Transportmetrica A: Transport Science [P], vol 9, issue 4, Taylor & Francis Ltd, Abingdon OX UK, pp. 299-315. </p>
+<p> Currie, G., Delbosc, A.R., Harrison, S., Sarvi, M., 2013, Impact of crowding on streetcar dwell time,Transportation Research Record-Series [P], vol 2353, U.S National Research Council Transportation Research Board, Washington DC USA, pp. 100-106.  </p>
+<p> Dias, C.G.J., Sarvi, M., Shiwakoti, N., Ejtemai, O., Burd, M.C., 2013, Investigating collective escape behaviours in complex situations,?Safety Science [P], vol 60, Elsevier BV, Amsterdam Netherlands, pp. 87-94. </p>
+<p> Goh, K., Currie, G., Sarvi, M., Logan, D., 2013, Road safety benefits from bus priority,?Transportation Research Record-Series [P], vol 2352, U.S National Research Council Transportation Research Board, Washington DC USA, pp. 41-49.  </p>
+<p> Shiwakoti, N., Sarvi, M., 2013, Understanding pedestrian crowd panic: a review on model organisms approach,?Journal of Transport Geography [P], vol 26, Elsevier Science Ltd, Oxford UK, pp. 12-17. </p>
+<p> Moridpour, S., Mazloumi Shomali, E., Sarvi, M., Rose, G., 2012, Enhanced evaluation of heavy vehicle lane restriction strategies in microscopic traffic simulation,?Journal of Transportation Engineering [P], vol 138, issue 2, American Society of Civil Engineers (ASCE), USA, pp. 236-242.  </p>
+<p> Moridpour, S., Rose, G., Sarvi, M., Mazloumi Shomali, E., 2012, Influence of the surrounding traffic characteristics on lane changing decision of heavy vehicle drivers,?Road and Transport Research [P], vol 21, issue 3, ARRB Group Ltd, Vermouth South Vic Australia, pp. 19-33. </p>
+<p> Moridpour, S., Sarvi, M., Rose, G., Mazloumi Shomali, E., 2012, Lane-changing decision model for heavy vehicle drivers,?Journal of Intelligent Transportation Systems [P], vol 16, issue 1, Taylor and Francis, USA, pp. 24-35. </p>
+<p> Currie, G., Sarvi, M., 2012, New model for secondary benefits of transit priority,?Transportation Research Record-Series [P], vol 3, issue 2276, National Academy of Sciences, Washington DC USA, pp. 63-71.  </p>
+<p> Mesbah, M., Sarvi, M., Tan, J., Karimirad, F., 2012, Scaling up transit priority modelling using high-throughput computing,?Conferences in Research and Practice in Information Technology [P], vol 127, Australian Computer Society Inc, Sydney Australia, pp. 53-64.  </p>
+<p> Dias, C.G.J., Sarvi, M., Shiwakoti, N., Burd, M.C., 2012, Turning angle effect on emergency egress,Transportation Research Record-Series [P], vol 2312, TRB, Washington DC USA, pp. 120-127.  </p>
+<p> Aghabayk Eagely, S.K., Sarvi, M., Young, W., 2012, Understanding the dynamics of heavy vehicle interactions in car-following,?Journal of Transportation Engineering [P], vol 138, issue 12, American Society of Civil Engineers, Reston VA USA, pp. 1468-1475.  </p>
+<p> Mazloumi Shomali, E., Rose, G., Currie, G., Sarvi, M., 2011, An integrated framework to predict bus travel time and its variability using traffic flow data,?Journal of Intelligent Transportation Systems [P], vol 15, issue 2, Taylor & Francis Inc, Pennsylvania USA, pp. 75-90. </p>
+<p> Shiwakoti, N., Sarvi, M., Rose, G., Burd, M., 2011, Animal dynamics based approach for modeling pedestrian crowd egress under panic conditions,?Transportation Research, Series B: Methodological [P], vol 45, issue 9, Elsevier, Amsterdam Netherlands, pp. 1433-1449. </p>
+<p> Aghabayk Eagely, S., Moridpour, S., Young, W., Sarvi, M., Wang, Y., 2011, Comparing heavy vehicle and passenger car lane-changing maneuvers on arterial roads and freeways,?Transportation Research Record-Series [P], vol 2260, National Academy of Sciences, Washington DC USA, pp. 94-101. </p>
+<p> Shiwakoti, N., Sarvi, M., Rose, G., Burd, M., 2011, Consequence of turning movements in pedestrian crowds during emergency egress,?Transportation Research Record-Series [P], vol 2234, Transportation Research Board of the National Academies, Washington USA, pp. 97-104.  </p>
+<p> Aftabuzzaman, M., Currie, G., Sarvi, M., 2011, Exploring the underlying dimensions of elements affecting traffic congestion relief impact of transit,?Cities [P], vol 28, issue 1, Elsevier Science Ltd, Kidlington Oxford UK, pp. 36-44. </p>
+<p> Sarvi, M., 2011, Heavy commercial vehicles-following behavior and interactions with different vehicle classes,?Journal of Advanced Transportation [P], vol E, John Wiley & Sons Ltd, New Jersey USA, pp. 1-9. </p>
+<p> Mesbah, M., Sarvi, M., Ouveysi, I., Currie, G., 2011, Optimization of transit priority in the transportation network using a decomposition methodology,?Transportation Research Part C: Emerging Technologies [P], vol 19, issue 2, Pergamon-Elsevier Science Ltd, Kidlington Oxford UK, pp. 363-373. </p>
+<p> Mesbah, M., Sarvi, M., Currie, G., 2011, Optimization of transit priority in the transportation network using a genetic algorithm,?IEEE Transactions on Intelligent Transportation Systems [P], vol 12, issue 3, IEEE, USA, pp. 908-919.  </p>
+<p> Shiwakoti, N., Sarvi, M., Rose, G., Burd, M., 2010, Biologically inspired modeling approach for collective pedestrian dynamics under emergency conditions,?Transportation Research Record-Series [P], vol 0.298, Transportation Research Board, Washington DC USA, pp. 176-184. </p>
+<p> Moridpour, S., Rose, G., Sarvi, M., 2010, Effect of surrounding traffic characteristics on lane changing behavior,?Journal of Transportation Engineering [P], vol 136, issue 11, American Society of Civil Engineers, Virginia USA, pp. 973-985.  </p>
+<p> Aftabuzzaman, M., Currie, G., Sarvi, M., 2010, Evaluating the congestion relief impacts of public transport in monetary terms,?Journal of Public Transportation [P], vol 13, issue 1, Center of Urban Transit Research, Florida USA, pp. 1-24.  </p>
+<p> Moridpour, S., Sarvi, M., Rose, G., 2010, Lane changing models: a critical review,?Transportation Letters [P], vol 2, issue 3, J. Ross Publishing, MA USA, pp. 157-173. </p>
+<p> Moridpour, S., Sarvi, M., Rose, G., 2010, Modeling the lane-changing execution of multiclass vehicles under heavy traffic conditions,?Transportation Research Record-Series [P], vol 0.298, Transportation Research Board, Washington DC, pp. 11-19.  </p>
+<p> Aftabuzzaman, M., Currie, G., Sarvi, M., 2010, Modeling the spatial impacts of public transport on traffic congestion relief in Melbourne, Australia,?Transportation Research Record-Series [P], National Academy of Sciences, Washington DC USA, pp. 1-10. </p>
+<p> Burd, M.C., Shiwakoti, N., Sarvi, M., Rose, G., 2010, Nest architecture and traffic flow: Large potential effects from small structural features,?Ecological Entomology [P], vol 35, issue 4, Wiley-Blackwell Publishing Inc, Malden Massachusetts USA, pp. 464-468.  </p>
+<p> Mesbah Namini, S., Sarvi, M., Currie, G., Saffarzadeh, M., 2010, Policy-making tool for optimization of transit priority lanes in urban network,?Transportation Research Record-Series [P], National Academy of Sciences, Washington DC USA, pp. 54-62. </p>
+<p> Shiwakoti, N., Sarvi, M., Rose, G., Burd, M.C., 2009, Enhancing the safety of pedestrians during emergency egress,?Transportation Research Record-Series [P], National Research Council, USA, pp. 31-37.  </p>
+<p> Sarvi, M., Kuwahara, M., 2009, Improving the efficiency of freight traffic at congested freeway merging sections,?Transportation Letters [P], vol 1, issue 4, J. Ross Publishing Inc, USA, pp. 309-322. </p>
+<p> Moridpour, S., Rose, G., Sarvi, M., 2009, Modelling the heavy vehicle drivers' lane changing decision under heavy traffic conditions,?Road and Transport Research [P], vol 18, issue 4, ARRB Group Ltd, Melbourne Vic Australia, pp. 49-57. </p>
+<p> Weerasooriya, G.N., Bajwa, S., Kuwahara, M., Sarvi, M., 2008, An improved bus signal priority model,Seisan Kenkyu [E], vol 60, issue 4, Institute of Industrial Science, the University of Tokyo, Japan, pp. 355-359. </p>
+<p> Mesbah Namini, S.M., Sarvi, M., Currie, G.V., 2008, New methodology for optimizing transit priority at the network level,?Transportation Research Record, vol 0.206, Transportation Research Board, Washington DC USA, pp. 93-100.  </p>
+<p> Sarvi, M., Kuwahara, M., 2008, Using ITS to improve the capacity of freeway merging sections by transferring freight vehicles,?IEEE Transactions on Intelligent Transportation Systems [P], vol 9, issue 4, The Institute of Electrical and Electronics Engineers Inc, New York NY USA, pp. 580-588.  </p>
+<p> Currie, G.V., Sarvi, M., Young, W., 2007, A new approach to evaluating on-road public transport priority projects: balancing the demand for limited road-space,?Transportation, vol 34, issue 4, Springer Science + Media, Dordrecht The Netherlands, pp. 413-428.  </p>
+<p> Currie, G.V., Sarvi, M., Young, W., 2007, Balanced road space allocation: A comprehensive approach,ITE Journal on the Web, vol 77, issue 7, Institution of Transportation Engineers, Washington DC USA, pp. 75-83. </p>
+<p> Ceder, A., Sarvi, M., 2007, Design and evaluation of passenger ferry routes,?Journal of Public Transportation [P], vol 10, issue 1, National Center for Transit Research, University of South Florida, Tampa FL USA, pp. 59-79. </p>
+<p> Sarvi, M., Kuwahara, M., 2007, Microsimulation of freeway ramp merging processes under congested traffic conditions,?IEEE Transactions on Intelligent Transportation Systems [P], vol 8, issue 3, IEEE, USA, pp. 470-479. </p>
+<p> Sarvi, M., Kuwahara, M., Ceder, A., 2007, Observing freeway ramp merging phenomena in congested traffic,?Journal of Advanced Transportation [P], vol 41, issue 2, Inst Transportation, Alberta Canada, pp. 145-170. </p>
+<p> Li, R., Rose, G., Sarvi, M., 2006, Evaluation of speed-based travel time estimation models,?Journal of Transportation Engineering, vol 132, issue 7, American Society of Civil Engineers, USA, pp. 540-547. </p>
+<p> Li, R., Rose, G., Sarvi, M., 2006, Using automatic vehicle identification data to gain insight into travel time variability and its causes,?Transportation Research Record, vol 0.145, Transportation Research Board, USA, pp. 24-32. </p>
+<p> Sarvi, M., Kuwahara, M., Ceder, A., 2004, Freeway ramp merging phenomena in congested traffic using simulation combined with a driving simulator,?Computer-Aided Civil and Infrastructure Engineering, vol 19, issue 5, Blackwell Publishing, Inc., Malden USA, pp. 351-363.  </p>
+<p> Sarvi, M., Kuwahara, M., Ceder, A., 2003, Developing control strategies for freeway merging points under congested traffic situations using modeling and a simulation approach,?Journal of Advanced Transportation, vol 37, issue 3, Institute for Transportation, Calgary Alberta Canada, pp. 1-32.  </p>
+<p> Sarvi, M., Ceder, A., Kuwahara, M., Morita, H., Nishikawa, I., 2001, Macroscopic study of freeway ramp merging phenomena observed in traffic congestion,?Journal of Eastern Asia Society for Transportation Studies, vol 4, issue 2, EAST, Tokyo Japan, pp. 185-200.  </p>
+<p> Sarvi, M., Kuwahara, M., Nishikawa, I., 2000, A simulation model for evaluation of merging capacity on the metropolitan expressway,?Seisan -Kenkyu, Journal of the Institute of Industrial Science, vol 52, issue 2, University of Tokyo, Tokyo Japan, pp. 104-108. </p>
+ </div>
+</div>
+<div class="clear-line"></div>
+<div class="clear-line"></div>
+<div class="test2">
+ <div class="show_hide2">
+   <div class="icon">
+     <div class="arrow3" id="arrow3"></div>
+   </div>
+   <div class="t3" id="pub-text2">Conference Proceedings</div>
+ </div>
+<div class="slidingDiv2" id ="a"> </br>
+<p> Aghabayk Eagely, S.K., Sarvi, M., Forouzideh, N., Young, W., 2013, A local linear model tree approach to develop car-following model considering lead vehicle types,?TRB 92nd Annual Meeting Compendium of Papers, 13 January 2013 to 17 January 2013, Transportation Research Board, Washington DC USA, pp. 1-12.  </p>
+<p> Aghabayk Eagely, S.K., Sarvi, M., Young, W., Kautzsch, L., 2013, A novel methodology for evolutionary calibration of vissim by multi-threading,?Australasian Transport Research Forum 2013 Proceedings, 2 October 2013 to 4 October 2013, Department of Infrastructure and Regional Development, Canberra ACT Australia, pp. 1-15.  </p>
+<p> Currie, G., Goh, K., Sarvi, M., 2013, An analytical approach to measuring the impacts of transit priority,TRB 92nd Annual Meeting Compendium of Papers, 13 January 2013 to 17 January 2013, Transportation Research Board, Washington DC USA, pp. 1-15. </p>
+<p> Gorrini, A., Bandini, S., Sarvi, M., Dias, C.G.J., Shiwakoti, N., 2013, An empirical study of crowd and pedestrian dynamics: the impact of different angle paths and grouping,?TRB 92nd Annual Meeting Compendium of Papers, 13 January 2013 to 17 January 2013, Transportation Research Board, Washington DC USA, pp. 1-10.  </p>
+<p> Dias, C.G.J., Sarvi, M., Shiwakoti, N., Ejtemai, O., 2013, Experimental study on pedestrian walking characteristics through angled corridors,?Australasian Transport Research Forum 2013 Proceedings, 2 October 2013 to 4 October 2013, Department of Infrastructure and Regional Development, Canberra ACT Australia, pp. 1-11.  </p>
+<p> Goh, K., Currie, G., Sarvi, M., Logan, D., 2013, Exploring bus lane safety impacts using traffic microsimulation,?Australasian Transport Research Forum 2013 Proceedings, 2 October 2013 to 4 October 2013, Department of Infrastructure and Regional Development, Canberra ACT Australia, pp. 1-17.  </p>
+<p> Cao, X., Young, W., Sarvi, M., 2013, Exploring duration of lane changing execution,?Australasian Transport Research Forum 2013 Proceedings, 2 October 2013 to 4 October 2013, Department of Infrastructure and Regional Development, Canberra ACT Australia, pp. 1-17.  </p>
+<p> Currie, G., Delbosc, A.R., Gelfand, S., Sarvi, M., 2013, Exploring the impact of crowding and stop design on streetcar dwell time,?TRB 92nd Annual Meeting Compendium of Papers, 13 January 2013 to 17 January 2013, Transportation Research Board, Washington DC USA, pp. 1-11.  </p>
+<p> Goh, K., Currie, G., Sarvi, M., Logan, D., 2013, Investigating the road safety impacts of bus rapid transit priority measures,?TRB 92nd Annual Meeting Compendium of Papers, 13 January 2013 to 17 January 2013, Transportation Research Board, Washington DC USA, pp. 1-18.  </p>
+<p> Currie, G., Mesbah, M., Sarvi, M., 2013, New insights on transit network performance using innovative GIS animation,?TRB 92nd Annual Meeting Compendium of Papers, 13 January 2013 to 17 January 2013, Transportation Research Board, Washington DC USA, pp. 1-10.  </p>
+<p> Aghabayk Eagely, S.K., Sarvi, M., Young, W., 2012, A macroscopic study of heavy vehicle traffic flow characteristics,?25th ARRB Conference - Shaping the Future, 23 September 2012 to 26 September 2012, ARRB Group, Perth WA Australia, pp. 1-11.  </p>
+<p> Goh, K., Currie, G., Sarvi, M., Logan, D., 2012, An improved methodology to compute crash modification factors: A case study of bus priority measures in Melbourne,?25th ARRB Conference - Shaping the Future, 23 September 2012 to 26 September 2012, ARRB Group, Perth Western Australia, pp. 1-15. </p>
+<p> Currie, G., Sarvi, M., 2012, Benchmarking the secondary benefits of transit priority,?TRB 2012 - Transportation Research Board 91st Annual Meeting, 22 January 2012 to 26 January 2012, Transportation Research Board of the National Academies, Washington DC USA, pp. 1-12. </p>
+<p> Sobhani, A., Young, W., Bahrololoom, S., Sarvi, M., 2012, Calculating time-to-collision for analysing right turning behaviour at signalised intersections,?ATRF - 35th Australasian Transport Research Forum, 26 September 2012 to 28 September 2012, Western Australian Department of Transport, Perth Western Australia, pp. 1-16.  </p>
+<p> Dias, C.G.J., Sarvi, M., Shiwakoti, N., 2012, Effect of turning angle on collective panic egress: experimental evidences and pedestrian crowd simulation,?25th ARRB Conference - Shaping the Future, 23 September 2012 to 26 September 2012, ARRB Group, Australia, pp. 1-9.  </p>
+<p> Aghabayk Eagely, S.K., Sarvi, M., Young, W., 2012, Effective variables on following behaviour of heavy vehicle drivers,?ATRF - 35th Australasian Transport Research Forum, 26 September 2012 to 28 September 2012, Western Australian Department of Transport, Perth Western Australia, pp. 1-14. </p>
+<p> Dias, C.G.J., Sarvi, M., Shiwakoti, N., Burd, M.C., 2012, Emergency egress through angled escape routes: combining experiments with biological entities and pedestrian crowd simulation,?TRB 2012 - Transportation Research Board 91st Annual Meeting, 22 January 2012 to 26 January 2012, Transportation Research Board of the National Academies, Washington DC USA, pp. 1-12.  </p>
+<p> Coxon, S.C., Sarvi, M., Shiwakoti, N., 2012, Evaluating passenger dispersal in metro train carriages through a pedestrian crowd modelling simulation,?TRB 91st Annual Meeting Compendium of Papers, 22 January 2012 to 26 January 2012, Transportation Research Board, Washington D.C. USA, pp. 1-12. </p>
+<p> Currie, G., Goh, K., Sarvi, M., 2012, Exploring the impacts of transit priority measures using automatic vehicle monitoring (AVM) data,?ATRF - 35th Australasian Transport Research Forum, 26 September 2012 to 28 September 2012, Western Australian Department of Transport, Perth Western Australia, pp. 1-15. </p>
+<p> Mesbah, M., Sarvi, M., Tan, J., Karimirad, F., 2012, High throughput computing application to transport modeling,?Proceedings of the 2011 2nd International Congress on Computer Applications and Computational Science Advances in Intelligent and Soft Computing, 15 November 2011 to 17 November 2011, Springer-Verlag, Berlin Heidelberg Germany, pp. 45-51.  </p>
+<p> Dias, C.G.J., Sarvi, M., Shiwakoti, N., 2012, Intersecting and merging pedestrian crowd flows under panic conditions: insights from biological entities,?ATRF - 35th Australasian Transport Research Forum, 26 September 2012 to 28 September 2012, Western Australian Department of Transport, Perth Western Australia, pp. 1-8. </p>
+<p> Aghabayk Eagely, S.K., Sarvi, M., Young, W., Wang, Y., 2012, Investigating heavy vehicle interactions during the car following process,?Transportation Research Board 2012 Annual Meeting Compendium of Papers, 22 January 2012 to 26 January 2012, Transportation Research Board of the National Academies, Washington DC USA, pp. 1-13. </p>
+<p> Sabzehali, H., Sarvi, M., Ouveisy, I., 2012, Understanding large transport network performance subject to unexpected traffic demand,?ATRF - 35th Australasian Transport Research Forum, 26 September 2012 to 28 September 2012, Western Australian Department of Transport, Perth Western Australia, pp. 1-11.  </p>
+<p> Sobhani, A., Young, W., Sarvi, M., 2011, A simulation approach to assess the safety performance of road locations,?Proceedings of the 3rd International Conference on Road Safety and Simulation, 14 September 2011 to 16 September 2011, Transportation Research Board, USA, pp. 1-22. </p>
+<p> Aghabayk Eagely, S., Young, W., Sarvi, M., Wang, Y., 2011, Examining vehicle interactions during a vehicle-following manoeuvre,?Proceedings of ATRF 2011 - 34th Australasian Transport Research Forum, 28 September 2011 to 30 September 2011, University of Sth Australia and the Sth Australian Dept of Transport, Energy and Infrastructure, Adelaide SA, pp. 1-14.  </p>
+<p> Shiwakoti, N., Sarvi, M., Rose, G., 2011, Exploration of design solutions for the enhancement of crowd safety,?Proceedings of ATRF 2011 - 34th Australasian Transport Research Forum, 28 September 2011 to 30 September 2011, University of Sth Australia and the Sth Australian Dept for Transport, Energy and Infrastructure, Adelaide SA, pp. 1-10.  </p>
+<p> Sarvi, M., Ejtemai, O., 2011, Exploring heavy vehicles car-following behaviour,?Proceedings of ATRF 2011 - 34th Australasian Transport Research Forum, 28 September 2011 to 30 September 2011, University of Sth Australia and the Sth Australian Dept of Transport, Energy and Infrastructure, Adelaide SA, pp. 1-11.  </p>
+<p> Aghabayk Eagely, S., Moridpour, S., Sarvi, M., Wang, Y., 2011, Investigating heavy vehicle lane changing manoeuvres,?Transportation Research Board 2011 Annual Meeting Compendium of Papers, 23 January 2011 to 27 January 2011, Transportation Research Board of the National Academies, Washington DC USA, pp. 1-16.  </p>
+<p> Sarvi, M., Ejtemai, O., Zavabeti, S., 2011, Modelling freeway weaving manoeuvre,?Proceedings of ATRF 2011 - 34th Australasian Transport Research Forum, 28 September 2011 to 30 September 2011, Univ. of Sth Australia and the Sth Australian Dept of Transport, Energy and Infrastructure, Adelaide SA, pp. 1-16.  </p>
+<p> Mesbah, M., Sarvi, M., Currie, G., Saffarzadeh, M., 2010, A policy making tool for optimization of transit priority lanes in an urban network,?Proceedings of Transport Research Board 89th Annual Meeting, 10 January 2010 to 14 January 2010, Transport Research Board - National Academy, Washington DC USA, pp. 1-17. </p>
+<p> Sarvi, M., Zavabeti, S., 2010, Development of a new driver behavior model through a novel object detection technique,?Proceedings of 15th International Conference - Road Safety on Four Continents, 28 March 2010 to 30 March 2010, VTI (Swedish National Road and Transport Research Institute), Sweden, pp. 494-506. </p>
+<p> Aftabuzzaman, M., Currie, G., Sarvi, M., 2010, Modeling the spatial impacts of public transport on traffic congestion relief in Melbourne,?Proceedings of the Transportation Research Board 89th Annual Meeting, 10 January 2010 to 14 January 2010, Transportation Research Board, Washington DC, pp. 1-16.  </p>
+<p> Sobhani, A., Young, W., Logan, D., Archer, J., Sarvi, M., 2010, Modelling the safety of intersections,Proceedings of 15th International Conference Road Safety on Four Continents, 28 March 2010 to 30 March 2010, VTI National Transport Authority, Linkoping Sweden, pp. 230-241. </p>
+<p> Mazloumi Shomali, E., Currie, G., Rose, G., Sarvi, M., 2010, Statistical confidence estimation measures for artificial neural networks: application in bus travel time prediction,?Transportation Research Board Annual Meeting, 10/01/2010 - 14/01/2010, Transportation Research Board - National Academy, Washington DC USA, pp. 1-13.  </p>
+<p> Aftabuzzaman, M., Currie, G., Sarvi, M., 2010, Understanding the factors of traffic congestion relief impact of public transport in global cities,?Proceedings of Transportation Research Board 89th Annual Meeting, 10 January 2010 to 14 January 2010, Transportation Research Board - National Academy, Washington DC USA, pp. 1-17. </p>
+<p> Aghabayk Eagely, S., Moridpour, S., Wang, Y., Young, W., Sarvi, M., 2010, Understanding the lane changing behaviour of large vehicles on arterial roads,?Proceedings of the 24th ARRB Conference - Building on 50 years of road and transport research, 12 October 2010 to 15 October 2010, ARRB Group, Melbourne Australia, pp. 1-15. </p>
+<p> Aghabayk Eagely, S., Young, W., Wang, Y., Sarvi, M., Allahverdizadeh, P., 2010, Understanding the need for heavy vehicle research on traffic flow,?The 10th International Conference on Traffic & Transportation Engineering, 23/11/2010 - 24/11/2010, Tehran Traffic and Transport Centre, Tehran Iran, pp. 1-12.  </p>
+<p> Mesbah, M., Sarvi, M., 2009, A heuristic approach to optimise public transport priority in an urban network,?ATRF 2009 - 32nd Australasian Transport Research Forum, 29 September 2009 to 1 October 2009, New Zealand Ministry of Transport, Auckland New Zealand, pp. 1-11.  </p>
+<p> Shiwakoti, N., Sarvi, M., Rose, G., Burd, M.C., 2009, A hybrid model for collective motion of pedestrians,ATRF 2009 - 32nd Australasian Transport Research Forum, 29 September 2009 to 1 October 2009, New Zealand Ministry of Transport, Auckland New Zealand, pp. 1-9.  </p>
+<p> Moridpour, S., Sarvi, M., Rose, G., 2009, Acceleration behaviour of the heavy vehicle drivers during the lane changing manoeuvre,?ATRF 2009 - 32 Australasian Transport Research Forum, 29 September 2009 to 1 October 2009, New Zealand Ministry of Transport, Auckland New Zealand, pp. 1-10. </p>
+<p> Mesbah, M., Sarvi, M., Ouveysi, I., Currie, G.V., 2009, Optimization of transit priority in the transportation network using a decomposition methodology,?Proceedings of the 18th Int. Symp. on Transportation and Traffic Theory (ISTTT18), 16 July 2009 to 18 July 2009, Hong Kong Polytechnic University, Hong Kong China, pp. 1-18. </p>
+<p> Aftabuzzaman, M., Currie, G.V., Sarvi, M., 2009, Understanding congestion relief impacts of public transport in monetary terms - Evidence from Australasia, Europe and the US,?Proceedings of the 88th Annual Meeting of the Transportation Research Board, 11 January 2009 to 15 January 2009, Transportation Research Board of the National Academies, Washington DC USA, pp. 1-14. </p>
+<p> Mazloumi Shomali, E., Currie, G.V., Rose, G., Sarvi, M., 2009, Using SCATS data to predict bus travel time,?Proceedings of the 2009 Australasian Transport Research Forum (ATRF2009), 29 September 2009 to 1 October 2009, New Zealand Ministry of Transport, Auckland New Zealand, pp. 1-14. </p>
+<p> Mesbah Namini, S.M., Sarvi, M., Currie, G.V., 2008, A new methodology for optimization of transit prioity in a transport network,?Proceedings of the Transportation Research Board 87th Annual Meeting, 13/01/2008 to 17/01/2008, Transportation Research Board, Washington DC USA, pp. 1-13. </p>
+<p> Mazloumi Shomali, E., Currie, G.V., Sarvi, M., 2008, Assessing measures of transit travel time variability using AVL data,?Proceedings of the Transportation Research Board 87th Annual Meeting, 13/01/2008 to 17/01/2008, Transportation Research Board, Washington DC USA, pp. 1-10.  </p>
+<p> Aftabuzzaman, M., Currie, G.V., Sarvi, M., 2008, Evaluating the congestion reduction impacts of public transport - A comparative assessment,?Proceedings of the 31st Australasian Transport Research Forum (ATRF2008), 2/10/2008 to 3/10/2008, Department of Transport Victoria, Melbourne VIC Australia, pp. 495-510.  </p>
+<p> Shiwakoti, N., Sarvi, M., Rose, G., 2008, Modelling pedestrian behaviour under emergency conditions; State of the art and future directions,?Proceedings of the 31st Australasian Transport Research Forum (2008 ATRF), 2/10/2008 to 3/10/2008, Department of Transport, Melbourne VIC Australia, pp. 457-473.  </p>
+<p> Moridpour, S., Sarvi, M., Rose, G., Ramsay, E., 2008, Variables influencing lane changing behaviour of heavy vehicles,?Proceedings of the Australasian Transport Research Forum (2008 ATRF), 2/10/2008 to 3/10/2008, Department of Transport, Melbourne VIC Australia, pp. 1-15.  </p>
+<p> Li, R., Rose, G., Sarvi, M., 2007, Modelling and estimation of travel time variability,?Proceedings of the 86th Annual Meeting of the US Transportation Research Board, 21/01/2007 to 25/01/2007, US Transportation Research Board, Washington D.C. USA, pp. 1-14.  </p>
+<p> Moridpour, S., Sarvi, M., Rose, G., 2007, Modelling lane changing behaviour of heavy commercial vehicles,?Proceedings of the 30th Australasian Transport Research Forum - 2007 ATRF, 25/09/2007 to 27/09/2007, Department of Infrastructure, Victoria Australia, Melbourne VIC Australia, pp. 1-15. </p>
+<p> Li, R., Rose, G., Sarvi, M., 2007, Predicting travel time and its variability in the short term,?Proceedings of the 14th World Congress on Intelligent Transport Systems - ITS for a Better Life, 9/10/2007 to 13/10/2007, Research Institute of Highway, Ministry of Communications, Beijing China, pp. 1-14.  </p>
+<p> Sarvi, M., Ceder, A., Kuwahara, M., 2005, Freeway ramp merging process observed in congested traffic, lag vehicle acceleration model,?Transportation and Traffic Theory: Flow, Dynamics and Human Interaction: Proceeding of the 16th International Symposium on Transportation and Traffic Theory, 19 July 2005 to 21 July 2005, Elsevier, Kidlington UK, pp. 303-321. </p>
+<p> Currie, G., Sarvi, M., Young, W., 2005, Roadspace allocation for public transport priority,?Priority Treatment: Juggling Competing Demands: Proceedings of the AITPM National Conference 2005, 27 July 2005 to 29 July 2005, Australian Institute of Traffic Planning and Management Inc., Adelaide SA Australia, pp. 77-94.  </p>
+<p> Currie, G., Sarvi, M., Young, W., 2004, A comprehensive approach to balanced road space allocation in relation to transit priority,?Transportation Research Board 2004 Annual Meeting Proceedings, 11 January 2004 to 15 January 2004, Transportation Research Board, Washington DC USA, pp. 1-14.  </p>
+<p> Currie, G., Sarvi, M., Young, W., 2004, A new methodology for allocating road space for public transport priority,?Urban Transport X - Urban Transport and the Environment in the 21st Century. Series: Advances in Transport Volume 16, 19/05/2004 to 21/05/2004, WIT Press, Ashurst UK, pp. 375-388.  </p>
+<p> Ceder, A., Sarvi, M., 2004, Optimal design and evaluation of Hong Kong passenger ferry routes,Transportation Research Board 83rd Annual Meeting, 11 January 2004 to 15 January 2004, Transportation Research Board, Washington DC USA, pp. 1-28.  </p>
+<p> Sarvi, M., Chung, E., Murakami, Y., Horiguchi, R., Kuwahara, M., 2003, A methodology for data cleansing and trip end identification of probe vehicles,?Proceedings of Infrastructure Planning Conference, Japan Society of Civil Engineering, Japan, pp. 1-4. </p>
+<p> Sarvi, M., Horiguchi, R., Kuwahara, M., Shimizu, Y., Sato, A., Sugisaki, Y., 2003, A methodology to identify traffic condition using intelligent probe vehicles,?Proceedings of the 10th World Congress on Intelligent Transport Systems (ITS), 16/11/2003 to 20/11/2003, ITS America, Washington DC USA, pp. 1-11. </p>
+<p> Chung, E., Sarvi, M., Murakami, Y., Horiguchi, R., Kuwahara, M., 2003, Cleansing of probe car data to determine trip OD,?Proceedings of the 21st ARRB Int. Conf, 18/05/2003-23/05/2003, AustStab, Cairns, pp. 1-12. </p>
+<p> Sarvi, M., Kuwahara, M., 2002, Evaluation of heavy-duty vehicles effects on the capacity of merging sections using simulation and detector data,?Proceedings of the International conference on inter-city transportation (ICIT), 5/11/2002 to 7/11/2002, pp. 1-12. </p>
+<p> Sarvi, M., Ceder, A., Kuwahara, M., 2002, Modeling of freeway ramp merging process observed during traffic congestion,?Proceedings of the 15th Int. Symp. on Transport and Traffic Theory - Transportation and Traffic Theory in the 21st Century, 16/07/2002 to 18/07/2002, Elsevier Science, Oxford UK, pp. 483-501.  </p>
+<p> Sarvi, M., Kuwahara, M., 2001, A study on freeway ramp merging phenomena in congested traffic situation by traffic simulation combined with driving simulator,?Proceedings of the 8th World Congress on ITS, 30/9/2001 to 4/10/2001, ITS America, Washington DC USA, pp. 1-13.  </p>
+<p> Sarvi, M., Wakui, H., Kajiwara, K., Sakamoto, K., Sato, Y., 2001, Innovative practical projects with the aid of traffic simulation in Japan,?Proceedings of 8th World Congress on Intelligent Transport Systems (ITS), 30/09/2001 to 4/10/2001, ITS America, Washington DC USA, pp. 1-8.  </p>
+<p> Sarvi, M., Kuwahara, M., Ceder, A., Morita, H., Nishikawa, I., 2000, Improving the control strategies of freeway merging points using modeling and simulation approach,?Proceedings of the 7th World Congress on Intelligent Transport Systems (ITS), 6/11/2000 to 9/11/2000, ITSA, Washington DC USA, pp. 1-7. </p>
+ </div>
+</div>
+
+  </section>
+<div class="clear-line"></div>
+ <div class="clear-line"></div>
+ <div class="clear-line"></div>
+ <div class="clear-line"></div>
+   <section id="teaching" class="section">
+
+     <div class="title col-md-8 col-sm-10 col-xs-12">
+       <h1 style="font-weight: 600;"><b>TEACHING</b></h1>
+        <hr>
+      </div>
+       <div class="course">
+        <div class="blank">
+
+       <div class="container">
+    <div class="t-text">
+
+CIV3283: Road Engineering <br/>
+CIV5305: Transport Modelling<br/>
+CIV4283: Transport Planning<br/>
+CIV5303: Quantitative Methods in Transport<br/>
+CIV4212: Civil Engineering Practices<br/>
+STA1010: Statistical methods for science
+</div>
+     </div>
+   </div>
+ </div>
+  </section>
+
+   <section id="activities" class="section">
+    <div class="title col-md-8 col-sm-10 col-xs-12">
+       <h1 style="font-weight: 600;"><b>ACTIVITIES</b></h1>
+        <hr>
+      </div>
+
+     <div class="acts">
+      <div class="act-con">
+      <div class="act-left">
+        <img src="images/book.png"/><br/>
+        </br>
+        <strong><p style="font-size:18px;">Editorial Board</p></strong>
+        <div class="col-md-12 text-center">
+         <p class="text-left" style=" width: 290px;margin-left:auto; margin-right:auto;">
+          Journal of Transportation Research Part C<br/>
+          Journal of Advanced Transportation<br/>
+          Transportmetrica B: Transport Dynamics<br/>
+          Journal of Transportation Letters<br/>
+          </p>
+        </div>
+      </div>
+
+      <div class="act-right">
+        <img src = "images/people.png"><br/>
+        </br>
+        <strong><p style="font-size:18px;">International Committee Memberships</p></strong>
+          <div class="col-md-12 text-center">
+              <p class="text-left" style="margin-left:auto; margin-right:auto;">
+                Traffic Flow Theory and Characteristics Committee<br/>
+                Crowd Dynamic Modelling and Simulation Subcommittee<br/>
+                Traffic Simulation Subcommittee<br/>
+                Emergency Evacuation Task Force<br/>
+                Transportation Network Modelling Committee (2009-2012)
+              </p>
+          </div>
+      </div>
+    </div>
+     </div>
+
+
+  </section>
+
+
+
+<section id="team" class="section">
+  <div class="container">
+
+    <div class="title col-md-8 col-sm-10 col-xs-12">
+      <h1 style="font-weight: 600;"><b>THE TEAM</b></h1>
+      <hr>
+      <div class="section-content pe-wp-default"><p style="font-size: 24px;"><b>Research Staff</b></p>
+    </div>
+    </div>
+
+ <div id="row">
+  <div id="research-con">
+ <div class="cre-animate" data-animation="scale-down" data-delay="0" data-easing="easeInOutQuart" data-offset="80%" data-speed="500">
+
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+    <div id="inner-text">
+      <h3>Omid Ejtemai</h3>
+      <p>  Research Officer<br/>
+       omid.ejtemai@monash.edu
+     </p>
+    </div>
+  </div>
+  </div>
+
+  <div id="research-con">
+    <div class="cre-animate" data-animation="scale-up" data-delay="200" data-easing="easeInOutQuart" data-offset="70%" data-speed="500">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+       <h3>Amir Sobhani</h3>
+       <p>Research Fellow<br/>
+amir.sobhani@monash.edu</p>
+    </div>
+     </div>
+  </div>
+
+
+  <div id="research-con">
+    <div class="cre-animate" data-animation="slide-up-from-bottom" data-delay="400" data-easing="easeInOutBack" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+      <h3>Kayvan Aghabayk</h3>
+      <p>
+       Teaching & Research Fellow<br/>
+kayvan.aghabayk@monash.edu
+      </p>
+    </div>
+  </div>
+  </div>
+
+ </div>
+
+ <!-- end of a row-->
+<br/>
+<br/>
+<br/>
+ <!-- Student -->
+
+  <div class="section-content pe-wp-default"><p style="color:grey; font-size: 24px;"><b>Current Students</b></p>
+    </div>
+  <div id="row">
+
+  <div id="member-con">
+       <div class="cre-animate" data-animation="slide-in-from-left" data-delay="0" data-easing="easeInOutBack" data-offset="80%" data-speed="1000">
+
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+    <div id="inner-text">
+       <h3>Charitha Dias</h3>
+       <p>
+	    Dynamics of Pedestrian Crowd under Panic Conditions<br/>
+	   charitha.dias@monash.edu
+      </p>
+    </div>
+   </div>
+  </div>
+
+
+
+
+  <div id="member-con">
+     <div class="cre-animate" data-animation="flip-y-axis" data-delay="500" data-easing="ease" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+       <h3>Kelvin Goh</h3>
+       <p>
+       Road Safety Impacts of Bus Priority Lanes <br/>
+       kelvin.goh@monash.edu
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+    <div class="cre-animate" data-animation="flip-x-axis" data-delay="500" data-easing="ease" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+      <h3>Long Tien Troung</h3>
+
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+     <div class="cre-animate" data-animation="slide-in-from-right" data-delay="500" data-easing="easeInOutBack" data-offset="70%" data-speed="500">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+     <h3>Hassan Sabzeali</h3>
+    </div>
+  </div>
+  </div>
+ </div>
+
+
+<div id="row">
+  <div id="member-con">
+    <div class="cre-animate" data-animation="fade-in" data-delay="0" data-easing="ease" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+    <div id="inner-text">
+       <h3>Xiaoying Cao</h3>
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+   <div class="cre-animate" data-animation="slide-down-from-top" data-delay="200" data-easing="easeInOutBack" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+       <h3>Ahmed Mirza</h3>
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+    <div class="cre-animate" data-animation="slide-up-from-bottom" data-delay="500" data-easing="easeInOutBack" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+      <h3>Shahi Islam</h3>
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+    <div class="cre-animate" data-animation="slide-in-from-right" data-delay="500" data-easing="easeInOutBack" data-offset="70%" data-speed="500">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+     <h3>Farhana Naznin</h3>
+    </div>
+  </div>
+</div>
+ </div>
+
+<div id="row">
+
+  <div id="member-con">
+       <div class="cre-animate" data-animation="slide-in-from-left" data-delay="0" data-easing="easeInOutBack" data-offset="80%" data-speed="1000">
+
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+    <div id="inner-text">
+       <h3>Richard Amoh</h3>
+    </div>
+   </div>
+  </div>
+
+
+
+
+  <div id="member-con">
+     <div class="cre-animate" data-animation="flip-y-axis" data-delay="500" data-easing="ease" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+       <h3>Katrina Pavkova</h3>
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+    <div class="cre-animate" data-animation="flip-x-axis" data-delay="500" data-easing="ease" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+      <h3>Milad Haghani</h3>
+
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+     <div class="cre-animate" data-animation="slide-in-from-right" data-delay="500" data-easing="easeInOutBack" data-offset="70%" data-speed="500">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+     <h3>Saeed Asadi</h3>
+    </div>
+  </div>
+  </div>
+ </div>
+ <br/>
+ <br/>
+<div class="section-content pe-wp-default"><p style="color:grey; font-size: 24px;"><b>Former Students</b></p>
+    </div>
+
+
+<div id="row">
+
+  <div id="member-con">
+       <div class="cre-animate" data-animation="slide-in-from-left" data-delay="0" data-easing="easeInOutBack" data-offset="80%" data-speed="1000">
+
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+    <div id="inner-text">
+       <h3>Mahmoud Mesbah</h3>
+    </div>
+   </div>
+  </div>
+
+
+
+
+  <div id="member-con">
+     <div class="cre-animate" data-animation="flip-y-axis" data-delay="500" data-easing="ease" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+       <h3>Sara Moridpour</h3>
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+    <div class="cre-animate" data-animation="flip-x-axis" data-delay="500" data-easing="ease" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+      <h3>Ali Zavabeti</h3>
+
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+     <div class="cre-animate" data-animation="slide-in-from-right" data-delay="500" data-easing="easeInOutBack" data-offset="70%" data-speed="500">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+     <h3>Nirajan Shiwakoti</h3>
+    </div>
+  </div>
+  </div>
+ </div>
+
+
+<div id="row">
+  <div id="member-con">
+    <div class="cre-animate" data-animation="fade-in" data-delay="0" data-easing="ease" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+    <div id="inner-text">
+       <h3>Md Aftabuzzaman</h3>
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+   <div class="cre-animate" data-animation="slide-down-from-top" data-delay="200" data-easing="easeInOutBack" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+       <h3>Ruimin Li</h3>
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+    <div class="cre-animate" data-animation="slide-up-from-bottom" data-delay="500" data-easing="easeInOutBack" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+      <h3>Hassan Sabsehali</h3>
+    </div>
+  </div>
+  </div>
+  <div id="member-con">
+    <div class="cre-animate" data-animation="slide-in-from-right" data-delay="500" data-easing="easeInOutBack" data-offset="70%" data-speed="500">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+     <div id="inner-text">
+     <h3>Amir Sobhani</h3>
+    </div>
+  </div>
+</div>
+ </div>
+
+
+
+ <div id="row">
+  <div id="member-con">
+    <div class="cre-animate" data-animation="fade-in" data-delay="0" data-easing="ease" data-offset="70%" data-speed="1000">
+    <div id="photo">
+      <img alt="" src="http://items.pixelentity2.netdna-cdn.com/wp-content/uploads/sites/4/2014/03/11.jpg">
+    </div>
+    <div id="inner-text">
+       <h3>Keyvan Aghabeyk</h3>
+    </div>
+  </div>
+  </div>
+
+
+
+ </div>
+
+  </div>
+  </section>
+
+ <!-- END OF TEAM -->
+
+  <section id="contact" class="section">
+     <div class="container">
+      <div class="title col-md-8 col-sm-10 col-xs-12">
+        <h1 style="font-weight: 600;"><b>CONTACT</b></h1>
+        <hr>
+
+        <p style="font-size:1.2em; line-height:1.5em;">
+           Tel: +61-3-99059696
+           <br/>
+           Email: majid.sarvi@monash.edu
+           <br/>
+           Institute of Transport Studies <br/>
+           Building 60, Clayton Campus <br/>
+           Monash University <br/>
+        </p>
+
+       </div>
+    </div>
+
+      <div class="row" style="background-color:#eee; height:45px;">
+             <div class="col-md-12 text-center" id="social">
+               <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/ITSMonash" target="_blank">
+                   <i class="fa fa-facebook"></i>
+               </a>
+                <a class="btn btn-social-icon btn-twitter">
+                   <i class="fa fa-twitter"></i>
+               </a>
+                <a class="btn btn-social-icon btn-linkedin">
+                   <i class="fa fa-linkedin"></i>
+               </a>
+                  <a class="btn btn-social-icon btn-google-plus">
+                   <i class="fa fa-google-plus"></i>
+               </a>
+          </div>
+     
+        </div>
+
+    <!-- Map -->
+    <div id="map"></div>
+    <!-- End Map -->
+  </section>
+
+ <footer>
+    <div class="container">
+
+      <p class="center grey">2014 &copy; Majid Sarvi. All rights reserved.</p>
+
+      <!-- End Copyright -->
+    </div>
+  </footer>
+
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+ <script type="text/javascript" src="js/jquery.cre-animate.js"></script>
+ <script type="text/javascript" src="js/jquery.nav.js"></script>
+ <script type="text/javascript" src="js/parallax-bg.js"></script>
+ <script type="text/javascript" src="js/flexslider.js"></script>
+ <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
